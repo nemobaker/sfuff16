@@ -1,10 +1,20 @@
-var express = require('express');
-var app = express();
+import express from 'express';
 
-app.get('/', function(req, res) {
-  res.send('Testing');
+const app = express();
+
+const port = process.env.PORT || 3000;
+
+require('babel-core/register')({
+  presets: ['es2015', 'react'],
 });
 
-app.listen(3000, function() {
-  console.log('Listening on Port 3000');
+app.get('/', function(req, res) {
+  res.send('testing');
+});
+
+app.listen(port, function(err) {
+  if (err) {
+  	return console.log(err);
+  }
+  console.log('Listening on port:' + port);
 });
