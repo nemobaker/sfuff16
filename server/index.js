@@ -1,7 +1,7 @@
 var express = require( 'express');
 var React = require( 'react');
 var ReactDOMServer = require( 'react-dom/server');
-var renderFullPage = require( './view');
+import renderFullPage from './view';
 
 const app = express();
 
@@ -18,6 +18,24 @@ app.get('/', (req, res) => {
     </div>
   )
   res.send(renderFullPage(html));
+});
+
+app.post('/send', function (req, res) {
+  var email = require('emailjs/email');
+  var server  = email.server.connect({
+     user:    "sfuff",
+     password:"goldengate1",
+     host:    "smtp.sendgrid.net",
+     port:    465,
+     ssl:     true
+  });
+
+  server.send({
+     text:    "example body text",
+     from:    "you <username@your-email.com>",
+     to:      "Neems <nemobaker@gmail.com>",
+     subject: "example subject"
+  }, function(err, message) { console.log(err || message); });
 });
 
 app.listen(port, (err) => {
