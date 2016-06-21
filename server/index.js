@@ -1,7 +1,7 @@
 var express = require( 'express');
 var React = require( 'react');
 var ReactDOMServer = require( 'react-dom/server');
-// var renderFullPage = require( './view');
+import renderFullPage from  './view';
 
 const app = express();
 
@@ -14,7 +14,7 @@ require('babel-core/register')({
 app.get('/', (req, res) => {
   const html = ReactDOMServer.renderToString(
     <div>
-      <App />
+      Hello World!
     </div>
   )
   res.send(renderFullPage(html));
