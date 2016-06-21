@@ -21,6 +21,24 @@ app.get('/', (req, res) => {
   res.send(renderFullPage(html));
 });
 
+app.post('/send', function (req, res) {
+  var email = require('emailjs/email');
+  var server  = email.server.connect({
+     user:    "sfuff",
+     password:"goldengate1",
+     host:    "smtp.sendgrid.net",
+     port:    465,
+     ssl:     true
+  });
+
+  server.send({
+     text:    "example body text",
+     from:    "you <username@your-email.com>",
+     to:      "Neems <nemobaker@gmail.com>",
+     subject: "SFUFF"
+  }, function(err, message) { console.log(err || message); });
+});
+
 app.listen(port, (err) => {
   if (err) {
   	return console.log(err);

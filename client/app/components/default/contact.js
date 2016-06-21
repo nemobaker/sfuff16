@@ -1,11 +1,22 @@
 import React from 'react';
+import $ from 'jquery';
 
 class Contact extends React.Component {
   constructor(props) {
   	super(props);
 
-  	this.state = {};
+  	this.state = {
+      name: '',
+      email: '',
+      message: ''
+    };
   }
+
+  let sendEmail =     $.post('http://localhost:3000/send', {
+      name: this.state.name,
+      email: this.state.email,
+      message: this.state.message
+    })
 
   render() {
     return (
