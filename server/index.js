@@ -14,7 +14,7 @@ require('babel-core/register')({
 app.get('/', (req, res) => {
   const html = ReactDOMServer.renderToString(
     <div>
-      Testing!
+      Hello World!
     </div>
   )
   res.send(renderFullPage(html));
