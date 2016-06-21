@@ -8,7 +8,7 @@ class Contact extends React.Component {
   }
 
   render() {
-    return() {
+    return (
       <div>
         <h2>contact</h2>
         <form>
@@ -29,7 +29,7 @@ class Contact extends React.Component {
           </div>
         </form>
       </div>
-    }
+    );
   }
 }
 

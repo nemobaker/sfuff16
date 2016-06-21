@@ -8,12 +8,12 @@ class Landing extends React.Component {
   }
 
   render() {
-    return() {
+    return (
       <div>
         <h1>sf urban film fest</h1>
         <h4>subtext</h4>
       </div>
-    }
+    );
   }
 }
 
