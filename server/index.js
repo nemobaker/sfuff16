@@ -1,4 +1,7 @@
 import express from 'express';
+import React from 'react';
+import ReactDOMServer from 'react-dom/server';
+import renderFullPage from '/view';
 
 const app = express();
 
@@ -8,11 +11,16 @@ require('babel-core/register')({
   presets: ['es2015', 'react'],
 });
 
-app.get('/', function(req, res) {
-  res.send('testing');
+app.get('/', (req, res) => {
+  const html = ReactDOMServer.renderToString(
+    <div>
+      <App />
+    </div>
+  )
+  res.send(renderFullPage(html));
 });
 
-app.listen(port, function(err) {
+app.listen(port, (err) => {
   if (err) {
   	return console.log(err);
   }
