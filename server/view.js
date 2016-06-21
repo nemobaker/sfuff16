@@ -1,4 +1,4 @@
-const renderFullPage => (html, initialState) {
+var renderFullPage = function(html, initialState) {
   return `
     <!doctype html>
     <html>
