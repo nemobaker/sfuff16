@@ -1,7 +1,7 @@
-import express from 'express';
-import React from 'react';
-import ReactDOMServer from 'react-dom/server';
-import renderFullPage from '/view';
+var express = require( 'express');
+var React = require( 'react');
+var ReactDOMServer = require( 'react-dom/server');
+// var renderFullPage = require( './view');
 
 const app = express();
 
