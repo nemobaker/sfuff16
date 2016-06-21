@@ -1,7 +1,7 @@
-const express = require('express');
-const React = require('react');
-const ReactDOMServer = require('react-dom/server');
-const renderFullPage = require('/view');
+var express = require( 'express');
+var React = require( 'react');
+var ReactDOMServer = require( 'react-dom/server');
+// var renderFullPage = require( './view');
 
 const app = express();
 
