@@ -3,20 +3,20 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: './client/index.js',
-  output: { 
-  	path: __dirname, 
-  	filename: '/client/bundle.js' 
-  },
+  output: { path: __dirname, filename: '/client/bundle.js' },
   module: {
-  	loaders: [
+    loaders: [
       {
-      	test: /\.jsx?$/,
-      	loader: 'babel-loader',
-      	exclude: /node_modules/,
-      	query: {
-      	  presets: ['es2015', 'react']
-      	},
+        test: /.jsx?$/,
+        loader: 'babel-loader',
+        exclude: /node_modules/,
+        query: {
+          presets: ['es2015', 'react'],
+        },
       },
-  	],
+    ],
+    resolve: {
+      extensions: ['.js', '.jsx'],
+    },
   },
 };

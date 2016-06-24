@@ -13,15 +13,15 @@ class Contact extends React.Component {
         <h2>contact</h2>
         <form>
           <div>
-            <label for="name">Name:</label>
+            <label htmlFor="name">Name:</label>
             <input type="text" id="name" />
           </div>
           <div>
-            <label for="email">Email:</label>
+            <label htmlFor="email">Email:</label>
             <input type="email" id="email" />
           </div>
           <div>
-            <label for="message">Message:</label>
+            <label htmlFor="message">Message:</label>
             <input type="text" id="message" />
           </div>
           <div className="button">

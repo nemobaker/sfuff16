@@ -1,8 +1,4 @@
-var express = require( 'express');
-var React = require( 'react');
-var ReactDOMServer = require( 'react-dom/server');
-import renderFullPage from './view';
-import App from '../client/app/app';
+import express from 'express';
 
 const app = express();
 
@@ -12,18 +8,15 @@ require('babel-core/register')({
   presets: ['es2015', 'react'],
 });
 
-app.get('/', (req, res) => {
-  const html = ReactDOMServer.renderToString(
-    <div>
-      <App />
-    </div>
-  )
-  res.send(renderFullPage(html));
-});
+import middleware from './middleware';
+middleware(app, express);
+
+import routes from './route';
+routes(app, express);
 
 app.listen(port, (err) => {
   if (err) {
-  	return console.log(err);
+    return console.log(err);
   }
   console.log('Listening on port:' + port);
 });

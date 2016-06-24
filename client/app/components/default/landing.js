@@ -9,7 +9,7 @@ class Landing extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="landing-header">
         <h1>sf urban film fest</h1>
         <h4>subtext</h4>
       </div>
