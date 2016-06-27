@@ -11,7 +11,7 @@ class Landing extends React.Component {
     return (
       <div className="landing-header">
         <h1>sf urban film fest</h1>
-        <h4>subtext</h4>
+        <h4>festival dates go here</h4>
       </div>
     );
   }
