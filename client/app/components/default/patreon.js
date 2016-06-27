@@ -9,7 +9,7 @@ class Patreon extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="patreon-section">
         <h2>patreon</h2>
         <h4>patreon info here</h4>
       </div>
