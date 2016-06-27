@@ -1,4 +1,5 @@
 import React from 'react';
+import { Grid, Row, Col } from 'react-bootstrap';
 
 class Patreon extends React.Component {
   constructor(props) {
@@ -10,8 +11,22 @@ class Patreon extends React.Component {
   render() {
     return (
       <div className="patreon-section">
-        <h2>patreon</h2>
-        <h4>patreon info here</h4>
+        <div className="patreon-container">
+          <Grid>
+            <Row className="show-grid">
+              <Col md={2}>
+                <h2>
+                  <span>patreon</span>
+                </h2>
+              </Col>
+              <Col md={1} />
+              <Col md={8}>
+                <h4>patreon info here</h4>
+              </Col>
+              <Col md={1} />
+            </Row>
+          </Grid>
+        </div>
       </div>
     );
   }

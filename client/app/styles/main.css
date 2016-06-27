@@ -95,7 +95,14 @@ h1 {
 .patreon-section,
 .contact-section,
 .social-footer {
-  padding: 50px;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.contact-section,
+.social-footer {
+  padding-bottom: 50px;
 }
 
 .about-section h2 {
@@ -108,10 +115,27 @@ h1 {
   text-decoration: none;
 }
 
-.about-container {
+.patreon-section h2 {
+  color: #ff0;
+  text-decoration: underline;
+}
+
+.patreon-section span {
+  color: #000;
+  text-decoration: none;
+}
+
+.about-container,
+.patreon-container {
   padding: 20px 20px;
+}
+
+.about-container {
   border: 3px solid #ff1d8e;
-  box-shadow: 1px 1px 1px #000;
+}
+
+.patreon-container {
+  border: 3px solid #ff0;
 }
 
 .social-footer {
