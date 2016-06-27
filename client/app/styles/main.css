@@ -52,10 +52,10 @@ h1 {
 .nav-list {
   font-family: 'Marvel', sans-serif;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 20px;
   text-transform: uppercase;
   list-style-type: none;
-  padding-top: 50px;
+  padding-top: 60px;
   padding-right: 50px;
 }
 
@@ -72,5 +72,15 @@ h1 {
   width: 180px;
   height: 150px;
   float: left;
+}
+
+@media (max-width: 568px) {
+  .sfuff-logo {
+    width: 110px;
+    height: 85px;
+  }
+  .nav-header {
+    height: 65px;
+  }
 }
 
