@@ -9,6 +9,10 @@ const renderFullPage = function(html, initialState) {
         <link rel="stylesheet" href="../client/app/styles/main.css" />
         <link href='https://fonts.googleapis.com/css?family=Marvel' rel='stylesheet' type='text/css'>
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Unica+One' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Khand' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Nova+Mono' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
         <title>sf urban film fest</title>
         <script src="https://use.fontawesome.com/273e32a8e1.js"></script>
       </head>

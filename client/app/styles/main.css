@@ -25,19 +25,20 @@ h4,
 h5,
 h6 {
   text-align: center;
+  font-family: 'Khand', sans-serif;
 }
 
 h1 {
-  color: #fff;
-  font-family: 'Marvel', sans-serif;
+  color: #000;
+  font-family: 'Fjalla One', sans-serif;
+  text-transform: uppercase;
   font-weight: 700;
-  text-shadow: 2px 2px 2px #000;
 }
 
 .landing-header {
   width: 100%;
-  min-height: 450px;
-  background-image: url(landing.jpg);
+  min-height: 500px;
+  background-image: url(landing2.jpg);
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -47,14 +48,15 @@ h1 {
 }
 
 .landing-header h1 {
-  padding-top: 125px;
-  font-size: 82px;
+  padding-top: 150px;
+  font-size: 86px;
 }
 
 .landing-header h4 {
   font-size: 36px;
-  color: #fff;
-  font-family: 'Marvel', sans-serif;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
 }
 
 .nav-header {
@@ -63,10 +65,10 @@ h1 {
 }
 
 .nav-list {
-  font-family: 'Marvel', sans-serif;
+  font-family: 'Khand', sans-serif;
   font-weight: 700;
-  font-size: 20px;
   text-transform: uppercase;
+  font-size: 20px;
   list-style-type: none;
   padding-top: 60px;
   padding-right: 50px;
