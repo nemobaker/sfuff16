@@ -125,8 +125,19 @@ h1 {
   text-decoration: none;
 }
 
+.contact-section h2 {
+  color: #0099cc;
+  text-decoration: underline;
+}
+
+.contact-section span {
+  color: #000;
+  text-decoration: none;
+}
+
 .about-container,
-.patreon-container {
+.patreon-container,
+.contact-container {
   padding: 20px 20px;
 }
 
@@ -136,6 +147,10 @@ h1 {
 
 .patreon-container {
   border: 3px solid #ff0;
+}
+
+.contact-container {
+  border: 3px solid #0099cc;
 }
 
 .social-footer {
