@@ -7,7 +7,7 @@ const renderFullPage = function(html, initialState) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
         <link rel="stylesheet" href="../client/app/styles/main.css" />
-        <link href="https://fonts.googleapis.com/css?family=Nova+Mono" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Marvel' rel='stylesheet' type='text/css'>
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
         <title>sf urban film fest</title>
       </head>

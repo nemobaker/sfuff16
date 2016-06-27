@@ -8,16 +8,28 @@ class Header extends React.Component {
   }
 
   render() {
-  	return (
-      <div>
-        <h2>sf urban film fest</h2>
-        <ul>
-          <li>about</li>
-          <li>patreon</li>
-          <li>contact</li>
+    return (
+      <div className="nav-header container">
+        <img
+          src="../client/app/styles/sfuff-logo.jpg"
+          alt="sfuff logo"
+          className="sfuff-logo"
+        />
+        <ul className="nav-list nav-right">
+          <li>
+            <a href="#about">about</a>
+          </li>
+          <li>/</li>
+          <li>
+            <a href="#patreon">patreon</a>
+          </li>
+          <li>/</li>
+          <li>
+            <a href="#contact">contact</a>
+          </li>
         </ul>
       </div>
-  	);
+    );
   }
 }
 
