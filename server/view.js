@@ -10,6 +10,7 @@ const renderFullPage = function(html, initialState) {
         <link href='https://fonts.googleapis.com/css?family=Marvel' rel='stylesheet' type='text/css'>
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
         <title>sf urban film fest</title>
+        <script src="https://use.fontawesome.com/273e32a8e1.js"></script>
       </head>
       <body>
         <div id="app"><div>${html}</div></div>

@@ -28,6 +28,9 @@ class Header extends React.Component {
             <a href="#contact">contact</a>
           </li>
         </ul>
+        <div className="nav-menu">
+          <i className="fa fa-angle-down fa-4x"></i>
+        </div>
       </div>
     );
   }

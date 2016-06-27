@@ -68,6 +68,10 @@ h1 {
   float: right;
 }
 
+.nav-menu {
+  display: none;
+}
+
 .sfuff-logo {
   width: 180px;
   height: 150px;
@@ -81,6 +85,16 @@ h1 {
   }
   .nav-header {
     height: 65px;
+  }
+  .nav-list {
+    display: none;
+  }
+  .nav-menu {
+    display: inline;
+    color: #ff1d8e;
+    padding-top: 15px;
+    padding-right: 20px;
+    float: right;
   }
 }
 
