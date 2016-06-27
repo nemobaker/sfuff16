@@ -7,13 +7,23 @@ class Footer extends React.Component {
 
   render() {
   	return (
-      <footer>
-        <ul>
-          <li>patreon</li>
-          <li>facebook</li>
-          <li>instagram</li>
-          <li>twitter</li>
-        </ul>
+      <footer className="social-footer">
+        <div className="container">
+          <ul className="social-icons">
+            <li>
+              <a href="#"><i className="fa fa-facebook fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="#"><i className="fa fa-instagram fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="#"><i className="fa fa-twitter fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="#"><i className="fa fa-youtube fa-2x"></i></a>
+            </li>
+          </ul>
+        </div>
       </footer>
   	);
   }

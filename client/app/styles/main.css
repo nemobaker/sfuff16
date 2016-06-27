@@ -93,8 +93,33 @@ h1 {
 
 .about-section,
 .patreon-section,
-.contact-section {
+.contact-section,
+.social-footer {
   padding: 50px;
+}
+
+.social-footer {
+  background-color: #0099cc;
+  text-align: center;
+}
+
+.social-icons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline;
+  padding: 15px 15px;
+}
+
+.social-icons li > a {
+  color: #fff;
+}
+
+.social-icons li > a:hover {
+  color: #ff1d8e;
 }
 
 @media (max-width: 768px) {
