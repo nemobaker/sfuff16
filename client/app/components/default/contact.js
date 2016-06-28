@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Row, Col } from 'react-bootstrap';
+import { Grid, Row, Col, Button, FormControl } from 'react-bootstrap';
 
 class Contact extends React.Component {
   constructor(props) {
@@ -24,7 +24,7 @@ class Contact extends React.Component {
                 <form>
                   <div>
                     <label htmlFor="name">Name:</label>
-                    <input
+                    <FormControl
                       type="text"
                       id="name"
                       value={this.props.updateName()}
@@ -33,8 +33,8 @@ class Contact extends React.Component {
                   </div>
                   <div>
                     <label htmlFor="email">Email:</label>
-                    <input
-                      type="email"
+                    <FormControl
+                      type="text"
                       id="email"
                       value={this.props.updateEmail()}
                       onChange={(e) => this.props.updateEmail(e)}
@@ -42,20 +42,23 @@ class Contact extends React.Component {
                   </div>
                   <div>
                     <label htmlFor="message">Message:</label>
-                    <input
+                    <FormControl
+                      componentClass="textarea"
+                      placeholder="What's on your mind?"
                       type="text"
                       id="message"
                       value={this.props.updateMessage()}
                       onChange={(e) => this.props.updateMessage(e)}
                     />
                   </div>
+                  <br></br>
                   <div className="button">
-                    <button
+                    <Button
                       type="button"
                       onClick={(e) => this.props.handleContactForm(e)}
                     >
                     Submit
-                    </button>
+                    </Button>
                   </div>
                 </form>
               </Col>
