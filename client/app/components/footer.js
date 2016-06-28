@@ -23,6 +23,7 @@ class Footer extends React.Component {
               <a href="#"><i className="fa fa-youtube fa-2x"></i></a>
             </li>
           </ul>
+          <h5>© SF Urban Film Fest 2016</h5>
         </div>
       </footer>
   	);

@@ -28,10 +28,20 @@ h6 {
   font-family: 'Khand', sans-serif;
 }
 
-h1 {
+h1,
+h2 {
   color: #000;
   font-family: 'Fjalla One', sans-serif;
   text-transform: uppercase;
+  font-weight: 700;
+}
+
+h5 {
+  color: #000;
+  font-family: 'Khand', sans-serif;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 20px;
   font-weight: 700;
 }
 
