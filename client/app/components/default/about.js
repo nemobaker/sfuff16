@@ -10,7 +10,7 @@ class About extends React.Component {
 
   render() {
     return (
-      <div className="about-section">
+      <div className="about-section" id="about">
         <div className="about-container">
           <Grid>
             <Row className="show-grid">
