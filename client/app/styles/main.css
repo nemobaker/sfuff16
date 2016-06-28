@@ -204,6 +204,17 @@ h5 {
   color: #ff1d8e;
 }
 
+.content-img {
+  height: 140px;
+  width: 130px;
+  padding-top: 25px;
+}
+
+.section-title {
+  margin: 0 auto;
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .sfuff-logo {
     width: 110px;
