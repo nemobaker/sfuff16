@@ -15,14 +15,14 @@ class Contact extends React.Component {
           <Grid>
             <Row className="show-grid">
               <Col md={2}>
-                <h2>
+                <h2 className="section-header">
                   <span>contact</span>
                 </h2>
               </Col>
               <Col md={1} />
               <Col md={8}>
-                <form>
-                  <div>
+                <form className="contact-form">
+                  <div className="form-field">
                     <label htmlFor="name">Name:</label>
                     <FormControl
                       type="text"
@@ -31,7 +31,7 @@ class Contact extends React.Component {
                       onChange={(e) => this.props.updateName(e)}
                     />
                   </div>
-                  <div>
+                  <div className="form-field">
                     <label htmlFor="email">Email:</label>
                     <FormControl
                       type="text"
@@ -40,24 +40,25 @@ class Contact extends React.Component {
                       onChange={(e) => this.props.updateEmail(e)}
                     />
                   </div>
-                  <div>
+                  <div className="form-field">
                     <label htmlFor="message">Message:</label>
                     <FormControl
                       componentClass="textarea"
-                      placeholder="What's on your mind?"
+                      rows="4"
                       type="text"
                       id="message"
                       value={this.props.updateMessage()}
                       onChange={(e) => this.props.updateMessage(e)}
                     />
                   </div>
-                  <br></br>
-                  <div className="button">
+                  <br />
+                  <div>
                     <Button
                       type="button"
+                      className="contact-button"
                       onClick={(e) => this.props.handleContactForm(e)}
                     >
-                    Submit
+                    submit
                     </Button>
                   </div>
                 </form>

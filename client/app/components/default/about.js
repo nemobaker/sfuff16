@@ -15,7 +15,7 @@ class About extends React.Component {
           <Grid>
             <Row className="show-grid">
               <Col md={2}>
-                <h2>
+                <h2 className="section-header">
                   <span>about</span>
                 </h2>
               </Col>
