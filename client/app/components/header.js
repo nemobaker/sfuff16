@@ -1,4 +1,5 @@
 import React from 'react';
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
 
 class Header extends React.Component {
   constructor(props) {
@@ -9,29 +10,23 @@ class Header extends React.Component {
 
   render() {
     return (
-      <div className="nav-header container">
-        <img
-          src="../client/app/styles/sfuff-logo.jpg"
-          alt="sfuff logo"
-          className="sfuff-logo"
-        />
-        <ul className="nav-list nav-right">
-          <li>
-            <a href="#about">about</a>
-          </li>
-          <li>/</li>
-          <li>
-            <a href="#patreon">patreon</a>
-          </li>
-          <li>/</li>
-          <li>
-            <a href="#contact">contact</a>
-          </li>
-        </ul>
-        <div className="nav-menu">
-          <i className="fa fa-angle-down fa-4x"></i>
-        </div>
-      </div>
+      <Navbar className="nav-container">
+        <Navbar.Header className="nav-header">
+          <img
+            src="../client/app/styles/sfuff-logo.jpg"
+            alt="sfuff logo"
+            className="sfuff-logo"
+          />
+          <Navbar.Toggle className="toggle-nav" />
+        </Navbar.Header>
+        <Navbar.Collapse>
+          <Nav pullRight>
+            <NavItem className="nav-item" eventKey={1} href="#about">About</NavItem>
+            <NavItem className="nav-item" eventKey={2} href="#patreon">Patreon</NavItem>
+            <NavItem className="nav-item" eventKey={3} href="#contact">Contact</NavItem>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     );
   }
 }

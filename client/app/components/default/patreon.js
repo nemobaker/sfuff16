@@ -11,7 +11,7 @@ class Patreon extends React.Component {
   render() {
     return (
       <div className="patreon-section" id="patreon">
-        <div className="patreon-container">
+        <div className="patreon-container container-fluid">
           <Grid>
             <Row className="show-grid">
               <Col md={2}>

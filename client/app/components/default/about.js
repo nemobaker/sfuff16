@@ -11,7 +11,7 @@ class About extends React.Component {
   render() {
     return (
       <div className="about-section" id="about">
-        <div className="about-container">
+        <div className="about-container container-fluid">
           <Grid>
             <Row className="show-grid">
               <Col md={2}>

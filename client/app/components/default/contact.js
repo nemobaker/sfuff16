@@ -11,7 +11,7 @@ class Contact extends React.Component {
   render() {
     return (
       <div className="contact-section" id="contact">
-        <div className="contact-container">
+        <div className="contact-container container-fluid">
           <Grid>
             <Row className="show-grid">
               <Col md={2}>
