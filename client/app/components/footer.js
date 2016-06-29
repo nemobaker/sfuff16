@@ -1,12 +1,9 @@
 import React from 'react';
 
 class Footer extends React.Component {
-  constructor(props) {
-  	super(props);
-  }
 
   render() {
-  	return (
+    return (
       <footer className="social-footer">
         <div className="container">
           <ul className="social-icons">
@@ -26,7 +23,7 @@ class Footer extends React.Component {
           <h5>© SF Urban Film Fest 2016</h5>
         </div>
       </footer>
-  	);
+    );
   }
 }
 

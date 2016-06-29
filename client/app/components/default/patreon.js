@@ -3,9 +3,9 @@ import { Grid, Row, Col } from 'react-bootstrap';
 
 class Patreon extends React.Component {
   constructor(props) {
-  	super(props);
+    super(props);
 
-  	this.state = {};
+    this.state = {};
   }
 
   render() {

@@ -3,9 +3,9 @@ import { Grid, Row, Col, Button, FormControl } from 'react-bootstrap';
 
 class Contact extends React.Component {
   constructor(props) {
-  	super(props);
+    super(props);
 
-  	this.state = {};
+    this.state = {};
   }
 
   render() {

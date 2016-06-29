@@ -3,9 +3,9 @@ import { Navbar, Nav, NavItem } from 'react-bootstrap';
 
 class Header extends React.Component {
   constructor(props) {
-  	super(props);
+    super(props);
 
-  	this.state = {}
+    this.state = {};
   }
 
   render() {

@@ -9,18 +9,18 @@ export default (app) => {
   app.post('/send', function (req, res) {
     var email = require('emailjs/email');
     var server  = email.server.connect({
-       user:    "sfuff",
-       password:"",
-       host:    "smtp.sendgrid.net",
-       port:    465,
-       ssl:     true
+      user: 'sfuff',
+      password: '',
+      host: 'smtp.sendgrid.net',
+      port: 465,
+      ssl: true,
     });
 
     server.send({
-       text:    req.body.message,
-       from:    req.body.name + " <" + req.body.email + ">",
-       to:      "SFUFF <nemobaker@gmail.com>",
-       subject: "SFUFF"
-    }, function(err, message) { console.log(err || message); });
+      text: req.body.message,
+      from: req.body.name + " <" + req.body.email + ">",
+      to: 'SFUFF <nemobaker@gmail.com>',
+      subject: 'Message from SFUFF Website',
+    }, function (err, message) { console.log(err || message); });
   });
 };
