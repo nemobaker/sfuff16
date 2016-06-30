@@ -1,7 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 
-const PROD = (process.env.NODE_ENV === 'production');
+// let PROD = (process.env.NODE_ENV === 'production');
 
 module.exports = {
   entry: './client/index.js',
@@ -21,16 +21,4 @@ module.exports = {
       extensions: ['.js', '.jsx'],
     },
   },
-  plugins: PROD ? [
-  new webpack.DefinePlugin({
-    "process.env": {
-      NODE_ENV: JSON.stringify("production")
-    }
-  }),
-  new webpack.optimize.UglifyJsPlugin({
-    compress: {
-      warnings: false
-    }
-  })
-] : [],
 };

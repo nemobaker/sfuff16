@@ -1,9 +1,9 @@
 import renderIndex from './requestHandler';
 
 export default (app) => {
-  const _user = process.env.SMTPUSER || '';
-  const _password = process.env.SMTPPASSWORD || '';
-  const _email = process.env.SMTPEMAIL || '';
+  const _user = process.env.SMTPUSER || 'sfuff';
+  const _password = process.env.SMTPPASSWORD || 'goldengate1';
+  const _email = process.env.SMTPEMAIL || 'currankim7@gmail.com';
 
   app.get('/', renderIndex);
 
