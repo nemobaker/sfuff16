@@ -29,6 +29,7 @@
     "babel-preset-stage-1": "^6.5.0",
     "babel-register": "^6.9.0",
     "body-parser": "^1.15.2",
+    "emailjs": "^1.0.5",
     "eslint": "^2.13.1",
     "eslint-plugin-import": "^1.9.2",
     "eslint-plugin-jsx-a11y": "^1.5.3",
