@@ -23,14 +23,17 @@ class Default extends React.Component {
     }
 
     if (this.state.name && validateEmail(this.state.email) && this.state.message) {
-      //uncomment this block to actually send the email. Also once it's deployed the link will be different.
-      // $.post('http://localhost:3000/send', {
-      //   name: this.state.name,
-      //   email: this.state.email,
-      //   message: this.state.message,
-      // })
-      // alert('Thank You! We\'ll be in touch!')
+
+      const domain = process.env.DOMAIN || 'http://localhost:3000/send';
+
+      $.post(domain, {
+        name: this.state.name,
+        email: this.state.email,
+        message: this.state.message,
+      })
+
       alert('Thanks for reaching out! We\'ll be in touch');
+
       this.setState({
         name: '',
         email: '',

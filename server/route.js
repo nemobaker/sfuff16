@@ -1,4 +1,9 @@
 import renderIndex from './requestHandler';
+import keys from './keys';
+
+const smtpEmail = process.env.SMTPEMAIL || keys.smtpEmail;
+const smtpUser = process.env.SMTPUSER || keys.smtpUser;
+const smtpPassword = process.env.SMTPPASSWORD || keys.smtpPassword;
 
 export default (app) => {
   app.get('/', renderIndex);
@@ -9,8 +14,8 @@ export default (app) => {
   app.post('/send', function (req, res) {
     var email = require('emailjs/email');
     var server  = email.server.connect({
-      user: 'sfuff',
-      password: '',
+      user: user,
+      password: password,
       host: 'smtp.sendgrid.net',
       port: 465,
       ssl: true,
@@ -19,7 +24,7 @@ export default (app) => {
     server.send({
       text: req.body.message,
       from: req.body.name + " <" + req.body.email + ">",
-      to: 'SFUFF <nemobaker@gmail.com>',
+      to: 'SFUFF <' + email + '>',
       subject: 'Message from SFUFF Website',
     }, function (err, message) { console.log(err || message); });
   });
