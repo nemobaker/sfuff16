@@ -52,6 +52,14 @@ h5 {
   font-weight: 700;
 }
 
+form {
+  font-family: 'Khand', sans-serif;
+}
+
+form div {
+  padding: 8px;
+}
+
 .landing-header {
   width: 100%;
   min-height: 500px;
@@ -263,4 +271,3 @@ h5 {
     font-size: 17px;
   }
 }
-
