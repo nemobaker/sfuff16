@@ -3,7 +3,7 @@ import renderIndex from './requestHandler';
 export default (app) => {
   const _user = 'sfuff';
   const _password = 'goldengate1';
-  const _email = 'nemobaker@gmail.com';
+  const _email = 'currankim7@gmail.com';
 
   app.get('/', renderIndex);
 
