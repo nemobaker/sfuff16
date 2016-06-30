@@ -4,6 +4,8 @@ import About from './about';
 import Patreon from './patreon';
 import Contact from './contact';
 import $ from 'jquery';
+const email = require('emailjs/email');
+
 
 class Default extends React.Component {
   constructor(props) {
@@ -23,13 +25,30 @@ class Default extends React.Component {
     }
 
     if (this.state.name && validateEmail(this.state.email) && this.state.message) {
-      let domain = 'sfuff16.herokuapp.com/send';
+      const _user = 'sfuff';
+      const _password = 'goldengate1';
+      const _email = 'currankim7@gmail.com';
 
-      $.post('/send', {
-        name: this.state.name,
-        email: this.state.email,
-        message: this.state.message,
-      })
+      var server  = email.server.connect({
+        user: _user,
+        password: _password,
+        host: 'smtp.sendgrid.net',
+        port: 465,
+        ssl: true,
+      });
+
+      server.send({
+        text: this.state.message,
+        from: this.state.name + " <" + this.state.email + ">",
+        to: 'SFUFF <' + _email + '>',
+        subject: 'Message from SFUFF Website',
+      }, function (err, message) { console.log(err || message); });
+
+      // $.post('/send', {
+      //   name: this.state.name,
+      //   email: this.state.email,
+      //   message: this.state.message,
+      // })
 
       alert('Thanks for reaching out! We\'ll be in touch');
 
