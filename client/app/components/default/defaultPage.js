@@ -25,7 +25,7 @@ class Default extends React.Component {
     if (this.state.name && validateEmail(this.state.email) && this.state.message) {
       let domain = 'sfuff16.herokuapp.com/send';
 
-      $.post(domain, {
+      $.post('http://sfuff16.herokuapp.com/send', {
         name: this.state.name,
         email: this.state.email,
         message: this.state.message,
