@@ -23,8 +23,9 @@ class Default extends React.Component {
     }
 
     if (this.state.name && validateEmail(this.state.email) && this.state.message) {
+      const domain;
 
-      const domain = process.env.DOMAIN || 'http://localhost:3000/send';
+      process.env.DOMAIN ? domain = process.env.DOMAIN : domain = 'http://localhost:3000/send';
 
       $.post(domain, {
         name: this.state.name,
