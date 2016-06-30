@@ -23,7 +23,7 @@ class Default extends React.Component {
     }
 
     if (this.state.name && validateEmail(this.state.email) && this.state.message) {
-      let domain = 'http://blooming-mesa-29338.herokuapp.com/send';
+      let domain = 'http://sfuff16.herokuapp.com/send';
 
       $.post(domain, {
         name: this.state.name,
