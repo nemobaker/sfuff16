@@ -1,6 +1,8 @@
 const path = require('path');
 const webpack = require('webpack');
 
+const PROD = (process.env.NODE_ENV === 'production');
+
 module.exports = {
   entry: './client/index.js',
   output: { path: __dirname, filename: '/client/bundle.js' },
